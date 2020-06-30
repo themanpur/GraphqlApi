@@ -1,0 +1,32 @@
+# src/schema.graphql
+
+const {GraphQLUpload} = require('graphql-upload')
+const typeDefs = `
+scalar Upload
+type Query{
+    user: [User!]!
+}
+
+type Mutation{
+    user(name:String!,address:String!,email:String,phone:String!,password:String!):User
+    signin(phone:String!,password:String!): User
+    reset(phone:String!,password:String!,code:String!): User
+}
+
+type User{
+    id: ID! 
+    address: String!
+    email: String
+    phone: String!
+    password: String!
+    code: String!
+}
+
+
+type Reset{
+  token!
+}
+`
+module.exports ={
+    typeDefs
+}
