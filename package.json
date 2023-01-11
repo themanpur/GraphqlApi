@@ -8,7 +8,7 @@
     "graphql": "^15.2.0",
     "graphql-tools": "^6.0.11",
     "graphql-yoga": "^1.18.3",
-    "knex": "0.13.0",
+    "knex": "2.4.0",
     "koa": "^2.13.0",
     "koa-bodyparser": "^4.3.0",
     "koa-helmet": "^5.2.0",
